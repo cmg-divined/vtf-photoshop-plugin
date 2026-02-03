@@ -7,6 +7,7 @@ It allows you to Open and Save VTF files directly, with full support for:
 - Mipmap generation
 - All standard VTF flags (Point Sample, Clamp, No LOD, etc.)
 - **Version 7.2 Compliant** (80-byte header support for Source Engine / Garry's Mod)
+So far it's been tested on CS4, CS6 and 2024 and it works well.
 
 ## Prerequisites for Building
 
@@ -52,4 +53,5 @@ It allows you to Open and Save VTF files directly, with full support for:
 ## Updates
 
 - Updated to add Alpha Channels, Flags, and Header compatibility.
+
 
