@@ -46,9 +46,10 @@ It allows you to Open and Save VTF files directly, with full support for:
 
 ## Credits
 
-Based on Adobe Photoshop SDK samples.
-VTF [wiki](https://developer.valvesoftware.com/wiki/VTF_(Valve_Texture_Format)) entry.
+- Based on Adobe Photoshop SDK samples.
+- VTF [wiki](https://developer.valvesoftware.com/wiki/VTF_(Valve_Texture_Format)) entry.
 
 ## Updates
 
-Updated to add Alpha Channels, Flags, and Header compatibility.
+- Updated to add Alpha Channels, Flags, and Header compatibility.
+
