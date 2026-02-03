@@ -13,9 +13,7 @@ It allows you to Open and Save VTF files directly, with full support for:
 1.  **Visual Studio 2022** (Community Edition is fine)
     - Install the "Desktop development with C++" workload.
 2.  **Adobe Photoshop SDK 2024** (or compatible)
-    - You must have the SDK extracted somewhere on your computer.
-	
-	Download it from: https://developer.adobe.com/console/4073574/servicesandapis/ps
+    - You must have the SDK [downloaded](https://developer.adobe.com/console/4073574/servicesandapis/ps) and extracted somewhere on your computer.
 
 ## Build Instructions
 
@@ -51,4 +49,5 @@ It allows you to Open and Save VTF files directly, with full support for:
 Based on Adobe Photoshop SDK samples.
 Modified for VTF support.
 Updated to fix Alpha Channels, Flags, and Header compatibility.
+
 
