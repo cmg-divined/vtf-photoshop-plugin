@@ -14,6 +14,7 @@ It allows you to Open and Save VTF files directly, with full support for:
     - Install the "Desktop development with C++" workload.
 2.  **Adobe Photoshop SDK 2024** (or compatible)
     - You must have the SDK extracted somewhere on your computer.
+	
 	Download it from: https://developer.adobe.com/console/4073574/servicesandapis/ps
 
 ## Build Instructions
@@ -50,3 +51,4 @@ It allows you to Open and Save VTF files directly, with full support for:
 Based on Adobe Photoshop SDK samples.
 Modified for VTF support.
 Updated to fix Alpha Channels, Flags, and Header compatibility.
+
