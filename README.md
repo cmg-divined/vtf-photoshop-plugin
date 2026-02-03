@@ -1,12 +1,14 @@
 # VTF Photoshop Plugin (v2)
 
 This plugin adds support for Valve Texture Format (`.vtf`) files to Adobe Photoshop (64-bit).
+
 It allows you to Open and Save VTF files directly, with full support for:
 - DXT1, DXT5, RGBA8888, BGRA8888 formats
 - Import/Export of Alpha Channels (as separate channels)
 - Mipmap generation
 - All standard VTF flags (Point Sample, Clamp, No LOD, etc.)
 - **Version 7.2 Compliant** (80-byte header support for Source Engine / Garry's Mod)
+
 So far it's been tested on CS4, CS6 and 2024 and it works well.
 
 ## Prerequisites for Building
@@ -53,5 +55,6 @@ So far it's been tested on CS4, CS6 and 2024 and it works well.
 ## Updates
 
 - Updated to add Alpha Channels, Flags, and Header compatibility.
+
 
 
