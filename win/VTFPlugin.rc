@@ -1,0 +1,10 @@
+// VTFPlugin.rc - PiPL Resource for Photoshop VTF Format Plugin
+#include "windows.h"
+#include "resource.h"
+
+// PiPL resource ID 16000
+// We use the generated resource file from Cnvtpipl
+#include "VTFPiPL.rc"
+
+// Options Dialog
+#include "VTFOptions.rc"
