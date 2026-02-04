@@ -31,8 +31,8 @@ inline void DecompressDXT1Block(const uint8_t* src, uint8_t* dst, int dstPitch, 
     DecodeColor565(color1, &palette[1][0], &palette[1][1], &palette[1][2]);
     palette[1][3] = 255;
     
-    if (color0 > color1) {
-        // 4-color mode
+    if (color0 > color1 || !hasAlpha) {
+        // 4-color mode (standard, or forced for opaque to avoid black artifacts)
         for (int c = 0; c < 3; c++) {
             palette[2][c] = (2 * palette[0][c] + palette[1][c]) / 3;
             palette[3][c] = (palette[0][c] + 2 * palette[1][c]) / 3;

@@ -754,10 +754,8 @@ static INT_PTR CALLBACK VTFOptionsDlgProc(HWND hDlg, UINT message, WPARAM wParam
             if (IsDlgButtonChecked(hDlg, IDC_CHK_MINMIP)) flags |= TEXTUREFLAGS_ALL_MIPS; // 0x00000400
             if (IsDlgButtonChecked(hDlg, IDC_CHK_SRGB)) flags |= TEXTUREFLAGS_PRE_SRGB; // 0x00080000
             
-            if (fmt == IMAGE_FORMAT_DXT5 || fmt == IMAGE_FORMAT_RGBA8888) {
+            if (fmt == IMAGE_FORMAT_DXT5 || fmt == IMAGE_FORMAT_RGBA8888 || fmt == IMAGE_FORMAT_DXT1) {
                 flags |= TEXTUREFLAGS_EIGHTBITALPHA;
-            } else if (fmt == IMAGE_FORMAT_DXT1) {
-                flags |= TEXTUREFLAGS_ONEBITALPHA;
             }
             
             gData->flags = flags;
