@@ -51,7 +51,11 @@ inline void CompressDXT1Block(const uint8_t* rgba, uint8_t* output) {
         int bestIdx = 0;
         int bestDist = INT_MAX;
         
-        for (int j = 0; j < 4; j++) {
+        // If color0 <= color1, we are in 3-color mode (Index 3 is transparent/black)
+        // So we must NOT use Index 3 for opaque pixels!
+        int maxIndices = (color0 <= color1) ? 3 : 4;
+        
+        for (int j = 0; j < maxIndices; j++) {
             int dist = 0;
             for (int c = 0; c < 3; c++) {
                 int diff = rgba[i*4 + c] - palette[j][c];
